@@ -77,5 +77,26 @@ class MovieManagerTests: XCTestCase {
         
         XCTAssertEqual(scifiMovie.title, movieQueried.title)
     }
+    
+    func testEquatable_ReturnsTrue () {
+        let actionMovie1 = Movie(title: "Action")
+        let actionMovie2 = Movie(title: "Action")
+        
+        XCTAssertEqual(actionMovie1, actionMovie2)
+    }
+    
+    func testEquatable_ReturnsFalseForDifferentTitles () {
+        let actionMovie1 = Movie(title: "Action")
+        let actionMovie2 = Movie(title: "Adventure")
+        
+        XCTAssertNotEqual(actionMovie1, actionMovie2)
+    }
+    
+    func testEquatable_ReturnsFalseForDifferentReleaseDates () {
+        let actionMovie1 = Movie(title: "Action", releaseDate: "11/11/11")
+        let actionMovie2 = Movie(title: "Action", releaseDate: "12/11/11")
+        
+        XCTAssertNotEqual(actionMovie1, actionMovie2)
+    }
 
 }
