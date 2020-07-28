@@ -78,25 +78,26 @@ class MovieManagerTests: XCTestCase {
         XCTAssertEqual(scifiMovie.title, movieQueried.title)
     }
     
-    func testEquatable_ReturnsTrue () {
-        let actionMovie1 = Movie(title: "Action")
-        let actionMovie2 = Movie(title: "Action")
+    func testClearArray_ReturnsArrayCountOfZero () {
+        sut.addMovie(movie: scifiMovie)
+        sut.addMovie(movie: actionMovie)
+        sut.addMovie(movie: artHouseMovie)
+        sut.checkOffMovieAtIndex(index: 1)
         
-        XCTAssertEqual(actionMovie1, actionMovie2)
+        XCTAssertEqual(sut.moviesToSeeCount, 2)
+        XCTAssertEqual(sut.moviesSeenCount, 1)
+        
+        sut.clearArrays()
+        
+        XCTAssertEqual(sut.moviesSeenCount, 0)
+        XCTAssertEqual(sut.moviesToSeeCount, 0)
     }
     
-    func testEquatable_ReturnsFalseForDifferentTitles () {
-        let actionMovie1 = Movie(title: "Action")
-        let actionMovie2 = Movie(title: "Adventure")
+    // Mark: Duplicates
+    func testDuplicateMovies_ShouldNotBeAddedToArray () {
+        sut.addMovie(movie: scifiMovie)
+        sut.addMovie(movie: scifiMovie)
         
-        XCTAssertNotEqual(actionMovie1, actionMovie2)
+        XCTAssertEqual(sut.moviesToSeeCount, 1)
     }
-    
-    func testEquatable_ReturnsFalseForDifferentReleaseDates () {
-        let actionMovie1 = Movie(title: "Action", releaseDate: "11/11/11")
-        let actionMovie2 = Movie(title: "Action", releaseDate: "12/11/11")
-        
-        XCTAssertNotEqual(actionMovie1, actionMovie2)
-    }
-
 }
