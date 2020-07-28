@@ -12,6 +12,10 @@ import XCTest
 class MovieManagerTests: XCTestCase {
     
     var sut: MovieManager!
+    
+    let scifiMovie = Movie(title: "Sci-fi")
+    let artHouseMovie = Movie(title: "Art House")
+    let actionMovie = Movie(title: "Action/Adventure")
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -47,6 +51,15 @@ class MovieManagerTests: XCTestCase {
         
         let movieQueried = sut.movieAtIndex(index: 0)
         XCTAssertEqual(testMovie.title, movieQueried.title)
+    }
+    
+    // Mark: Checking off
+    func testCheckOffMovie_UpdatesMovieManagerCounts () {
+        sut.addMovie(movie: Movie(title: "Action/Adventure"))
+        sut.checkOffMovieAtIndex(index: 0)
+        
+        XCTAssertEqual(sut.moviesToSeeCount, 0)
+        XCTAssertEqual(sut.moviesSeenCount, 1)
     }
 
 }
