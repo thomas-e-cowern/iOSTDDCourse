@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4137814824D20173003B66ED /* MovieLibraryDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4137814724D20173003B66ED /* MovieLibraryDataService.swift */; };
 		413EAFB624CF5BCF00849014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413EAFB524CF5BCF00849014 /* AppDelegate.swift */; };
 		413EAFB824CF5BCF00849014 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413EAFB724CF5BCF00849014 /* SceneDelegate.swift */; };
 		413EAFBA24CF5BCF00849014 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413EAFB924CF5BCF00849014 /* LibraryViewController.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4137814724D20173003B66ED /* MovieLibraryDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLibraryDataService.swift; sourceTree = "<group>"; };
 		413EAFB224CF5BCF00849014 /* FilmFest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmFest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		413EAFB524CF5BCF00849014 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		413EAFB724CF5BCF00849014 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4137814624D20136003B66ED /* Data Service */ = {
+			isa = PBXGroup;
+			children = (
+				4137814724D20173003B66ED /* MovieLibraryDataService.swift */,
+			);
+			path = "Data Service";
+			sourceTree = "<group>";
+		};
 		413EAFA924CF5BCF00849014 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +97,7 @@
 		413EAFB424CF5BCF00849014 /* FilmFest */ = {
 			isa = PBXGroup;
 			children = (
+				4137814624D20136003B66ED /* Data Service */,
 				41BD164C24D0594D0074AAD8 /* Controller */,
 				41BD164B24D059470074AAD8 /* View */,
 				41BD164A24D059410074AAD8 /* Model */,
@@ -255,6 +266,7 @@
 			files = (
 				413EAFBA24CF5BCF00849014 /* LibraryViewController.swift in Sources */,
 				413EAFB624CF5BCF00849014 /* AppDelegate.swift in Sources */,
+				4137814824D20173003B66ED /* MovieLibraryDataService.swift in Sources */,
 				41BD165224D05A6C0074AAD8 /* MovieManager.swift in Sources */,
 				413EAFDA24CF624C00849014 /* Movie.swift in Sources */,
 				413EAFB824CF5BCF00849014 /* SceneDelegate.swift in Sources */,
