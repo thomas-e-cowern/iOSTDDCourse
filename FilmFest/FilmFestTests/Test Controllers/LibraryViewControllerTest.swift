@@ -15,7 +15,8 @@ class LibraryViewControllerTest: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        sut = LibraryViewController()
+        sut = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "LibraryViewControllerID")
+        _ = sut.view
     }
 
     override func tearDownWithError() throws {
@@ -23,9 +24,8 @@ class LibraryViewControllerTest: XCTestCase {
     }
 
     // MARK: Nil checks
-    
     func testLibraryVC_TableViewShouldNotBeNil () {
-        
+        XCTAssertNotNil(sut.libraryTableView)
     }
     
 
