@@ -15,6 +15,7 @@
 		413EAFC224CF5BDB00849014 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413EAFC024CF5BDB00849014 /* LaunchScreen.storyboard */; };
 		413EAFD824CF612F00849014 /* MovieStructTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413EAFD724CF612F00849014 /* MovieStructTests.swift */; };
 		413EAFDA24CF624C00849014 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413EAFD924CF624C00849014 /* Movie.swift */; };
+		413EFBEC24D1F32100EFDB59 /* LibraryViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413EFBEB24D1F32100EFDB59 /* LibraryViewControllerTest.swift */; };
 		41BD165024D05A020074AAD8 /* MovieManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD164F24D05A020074AAD8 /* MovieManagerTests.swift */; };
 		41BD165224D05A6C0074AAD8 /* MovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD165124D05A6C0074AAD8 /* MovieManager.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		413EAFCE24CF5BDB00849014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		413EAFD724CF612F00849014 /* MovieStructTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStructTests.swift; sourceTree = "<group>"; };
 		413EAFD924CF624C00849014 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		413EFBEB24D1F32100EFDB59 /* LibraryViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewControllerTest.swift; sourceTree = "<group>"; };
 		41BD164F24D05A020074AAD8 /* MovieManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManagerTests.swift; sourceTree = "<group>"; };
 		41BD165124D05A6C0074AAD8 /* MovieManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +146,7 @@
 		41BD164E24D0597E0074AAD8 /* Test Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				413EFBEB24D1F32100EFDB59 /* LibraryViewControllerTest.swift */,
 			);
 			path = "Test Controllers";
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41BD165024D05A020074AAD8 /* MovieManagerTests.swift in Sources */,
+				413EFBEC24D1F32100EFDB59 /* LibraryViewControllerTest.swift in Sources */,
 				413EAFD824CF612F00849014 /* MovieStructTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
