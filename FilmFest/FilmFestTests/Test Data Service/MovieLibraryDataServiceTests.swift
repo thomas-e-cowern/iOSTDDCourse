@@ -62,5 +62,14 @@ class MovieLibraryDataServiceTests: XCTestCase {
         XCTAssertEqual(libraryTableView.numberOfRows(inSection: 1), 2)
     }
     
+    // MARK: Cells
+    func testCell_RowAtIndex_ReturnsMovieCell () {
+        sut.movieManager?.addMovie(movie: darkComedy)
+        libraryTableView.reloadData()
+        
+        let cellQuiried = libraryTableView.cellForRow(at: IndexPath(row: 0, section: 0))
+        XCTAssertTrue(cellQuiried is MovieCell)
+    }
+    
 }
 
