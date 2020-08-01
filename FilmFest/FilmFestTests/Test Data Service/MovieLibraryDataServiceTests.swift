@@ -55,7 +55,11 @@ class MovieLibraryDataServiceTests: XCTestCase {
         sut.movieManager?.addMovie(movie: darkComedy)
         sut.movieManager?.checkOffMovieAtIndex(index: 0)
         
+        XCTAssertEqual(libraryTableView.numberOfRows(inSection: 1), 1)
         
+        sut.movieManager?.checkOffMovieAtIndex(index: 0)
+        libraryTableView.reloadData()
+        XCTAssertEqual(libraryTableView.numberOfRows(inSection: 1), 2)
     }
     
 }
