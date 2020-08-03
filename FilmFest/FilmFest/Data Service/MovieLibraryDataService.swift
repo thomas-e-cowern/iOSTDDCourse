@@ -30,7 +30,7 @@ class MovieLibraryDataService: NSObject, UITableViewDataSource, UITableViewDeleg
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        return MovieCell()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
