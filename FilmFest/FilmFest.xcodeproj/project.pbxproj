@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		411BD66D24F8FB100018188B /* MockExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411BD66C24F8FB100018188B /* MockExtensions.swift */; };
 		4137814824D20173003B66ED /* MovieLibraryDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4137814724D20173003B66ED /* MovieLibraryDataService.swift */; };
 		413EAFB624CF5BCF00849014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413EAFB524CF5BCF00849014 /* AppDelegate.swift */; };
 		413EAFB824CF5BCF00849014 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413EAFB724CF5BCF00849014 /* SceneDelegate.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		411BD66C24F8FB100018188B /* MockExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExtensions.swift; sourceTree = "<group>"; };
 		4137814724D20173003B66ED /* MovieLibraryDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLibraryDataService.swift; sourceTree = "<group>"; };
 		413EAFB224CF5BCF00849014 /* FilmFest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmFest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		413EAFB524CF5BCF00849014 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		411BD66B24F8FAF00018188B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				411BD66C24F8FB100018188B /* MockExtensions.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		4137814624D20136003B66ED /* Data Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +128,7 @@
 		413EAFCB24CF5BDB00849014 /* FilmFestTests */ = {
 			isa = PBXGroup;
 			children = (
+				411BD66B24F8FAF00018188B /* Mocks */,
 				41CD33E224D31270008337B6 /* Test Data Service */,
 				41BD164E24D0597E0074AAD8 /* Test Controllers */,
 				41BD164D24D059710074AAD8 /* Test Models */,
@@ -295,6 +306,7 @@
 				41CD33E424D312CD008337B6 /* MovieLibraryDataServiceTests.swift in Sources */,
 				41BD165024D05A020074AAD8 /* MovieManagerTests.swift in Sources */,
 				413EFBEC24D1F32100EFDB59 /* LibraryViewControllerTest.swift in Sources */,
+				411BD66D24F8FB100018188B /* MockExtensions.swift in Sources */,
 				413EAFD824CF612F00849014 /* MovieStructTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
